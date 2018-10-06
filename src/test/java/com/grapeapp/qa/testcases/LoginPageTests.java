@@ -13,8 +13,8 @@ public class LoginPageTests extends Testbase {
 	
 	@Test(priority=1)
 	public void testTitle() {
-		String expected = login.getTitle();
-		String actual = "CRMPRO";
+		String actual = login.getTitle();
+		String expected = "CRMPRO";
 		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
 	}
