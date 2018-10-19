@@ -3,18 +3,23 @@ package com.grapeapp.qa.base;
 import java.io.File;
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.grapeapp.qa.logs.WebEventListener;
 import com.grapeapp.qa.pages.LoginPage;
@@ -49,15 +54,17 @@ public class Testbase {
 	}
 	
 	public void initializeBrowser() {
-		String browserName = prop.getProperty("browser");
-		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("driverpath"));
-			driver = new ChromeDriver();
-		}
-		else if (browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", prop.getProperty("driverpath"));
-			driver = new FirefoxDriver();
-		}
+		//String browserName = prop.getProperty("browser");
+		String osName = System.getProperty("os.name");
+			if (osName.equalsIgnoreCase("windows 7")) {
+				System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverpath"));
+				driver = new ChromeDriver();
+			}
+			else if (osName.equalsIgnoreCase("windows 10")) {
+				System.setProperty("webdriver.gecko.driver", prop.getProperty("firefoxdriverpath"));
+				driver = new FirefoxDriver();
+			}
+		
 		e_driver = new EventFiringWebDriver(driver);
 		eListener = new WebEventListener();
 		e_driver.register(eListener);
@@ -67,6 +74,8 @@ public class Testbase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		
+		initializePages();
 	}
 	
 	public void initializePages() {
@@ -82,10 +91,10 @@ public class Testbase {
 	
 	@BeforeMethod
 	public void setUpMethod(Method method) {
-		test = extent.startTest(this.getClass().getSimpleName() + " :: " + method.getName(), method.getName());
+		String osName = System.getProperty("os.name");
+		test = extent.startTest(osName + " :: " + this.getClass().getSimpleName() + " :: " + method.getName(), method.getName());
 		test.assignAuthor("Sachin Roy");
 		test.assignCategory("Functional Tests");
-		
 		initializeBrowser();
 		initializePages();
 	}
@@ -105,6 +114,7 @@ public class Testbase {
 			extent.endTest(test);
 		}
 		driver.quit();
+		
 	}
 	
 	@AfterSuite

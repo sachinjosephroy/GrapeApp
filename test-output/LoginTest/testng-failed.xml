@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [LoginTest]" parallel="tests">
+  <test name="Win10 Browser Chrome(failed)" parallel="tests">
+    <parameter name="OS" value="Win10"/>
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="com.grapeapp.qa.testcases.LoginPageTests">
+        <methods>
+          <include name="testTitle"/>
+          <include name="tearDownMethod"/>
+          <include name="initializeBrowser"/>
+          <include name="tearDownSuite"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- com.grapeapp.qa.testcases.LoginPageTests -->
+    </classes>
+  </test> <!-- Win10 Browser Chrome(failed) -->
+  <test name="Win10 Browser Firefox(failed)" parallel="tests">
+    <parameter name="OS" value="Win10"/>
+    <parameter name="myBrowser" value="firefox"/>
+    <classes>
+      <class name="com.grapeapp.qa.testcases.LoginPageTests">
+        <methods>
+          <include name="testTitle"/>
+          <include name="tearDownMethod"/>
+          <include name="initializeBrowser"/>
+          <include name="tearDownSuite"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- com.grapeapp.qa.testcases.LoginPageTests -->
+    </classes>
+  </test> <!-- Win10 Browser Firefox(failed) -->
+</suite> <!-- Failed suite [LoginTest] -->

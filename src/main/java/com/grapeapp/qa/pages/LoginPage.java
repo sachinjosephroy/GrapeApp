@@ -34,6 +34,7 @@ public class LoginPage extends Testbase {
 
 
 	public String getTitle() {
+		System.out.println("in Login with Chrome");
 		return driver.getTitle();
 	}
 
