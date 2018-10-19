@@ -25,6 +25,9 @@ public class LoginPage extends Testbase {
 	@FindBy(xpath = "")
 	WebElement btnLogin;
 	
+	@FindBy(xpath = "//div[@id='slide_1']//h1")
+	WebElement txtLogo;
+	
 	
 	public void logMeIn() {
 		tbUsername.sendKeys(prop.getProperty("username"));
@@ -36,6 +39,11 @@ public class LoginPage extends Testbase {
 	public String getTitle() {
 		System.out.println("in Login with Chrome");
 		return driver.getTitle();
+	}
+
+
+	public String getLogo() {
+		return txtLogo.getText();
 	}
 
 }

@@ -32,7 +32,7 @@ public class Testbase {
 	
 	String configFilePathWin10 = "C:\\Users\\simir\\eclipse-workspace\\GrapeApp\\src\\main\\java\\com\\grapeapp\\qa\\configuration\\config.properties";
 	String configFilePathWin7 = "C:\\Users\\Sachin Roy\\eclipse-oxygen-workspace\\GrapeApp\\src\\main\\java\\com\\grapeapp\\qa\\configuration\\config.properties"; 
-	String extentReportPath = "C:\\\\ExtentReports\\GrapeAppReport.html";
+	String extentReportPath = "C:\\ExtentReports\\GrapeAppReport.html";
 	String extentConfigPath = "C:\\ExtentReports\\extent-config.xml";
 	public static WebDriver driver;
 	public static Properties prop;

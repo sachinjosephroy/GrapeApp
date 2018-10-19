@@ -19,11 +19,17 @@ public class LoginPageTests extends Testbase {
 	}
 	
 	@Test(priority=1)
-	//@Parameters("browserName")
 	public void testTitle() {
-		//initializeBrowser(browserName);
 		String actual = login.getTitle();
 		String expected = "#1 Free CRM software in the cloud for sales and service2";
+		verifyTestResult(actual, expected);
+		Assert.assertEquals(actual, expected);
+	}
+	
+	@Test(priority=2)
+	public void testLogo() {
+		String actual = login.getLogo();
+		String expected = "#1 Free CRM software in the cloud for sales and service";
 		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
 	}
