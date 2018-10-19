@@ -21,7 +21,7 @@ public class LoginPageTests extends Testbase {
 	@Test(priority=1)
 	public void testTitle() {
 		String actual = login.getTitle();
-		String expected = "#1 Free CRM software in the cloud for sales and service2";
+		String expected = "#1 Free CRM software in the cloud for sales and service";
 		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
 	}
