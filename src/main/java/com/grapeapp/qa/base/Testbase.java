@@ -30,7 +30,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Testbase {
 	
-	String configFilePath = "C:\\Users\\simir\\eclipse-workspace\\GrapeApp\\src\\main\\java\\com\\grapeapp\\qa\\configuration\\config.properties";
+	String configFilePathWin10 = "C:\\Users\\simir\\eclipse-workspace\\GrapeApp\\src\\main\\java\\com\\grapeapp\\qa\\configuration\\config.properties";
+	String configFilePathWin7 = "C:\\Users\\Sachin Roy\\eclipse-oxygen-workspace\\GrapeApp\\src\\main\\java\\com\\grapeapp\\qa\\configuration\\config.properties"; 
 	String extentReportPath = "C:\\\\ExtentReports\\GrapeAppReport.html";
 	String extentConfigPath = "C:\\ExtentReports\\extent-config.xml";
 	public static WebDriver driver;
@@ -43,9 +44,21 @@ public class Testbase {
 	public LoginPage login;
 	public static TestUtil util;
 	
+	public String getConfigFilePath() {
+		String configFilePath = null;
+		if(System.getProperty("os.name").equalsIgnoreCase("Windows 10")) {
+			configFilePath = configFilePathWin10;
+		}
+		else if(System.getProperty("os.name").equalsIgnoreCase("Windows 7")) {
+			configFilePath = configFilePathWin7;
+		}
+		
+		return configFilePath;
+	}
+	
 	public Testbase() {
 		try {
-			FileInputStream fis = new FileInputStream(configFilePath);
+			FileInputStream fis = new FileInputStream(getConfigFilePath());
 			prop = new Properties();
 			prop.load(fis);
 		} catch (Exception e) {

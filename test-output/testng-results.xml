@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18115" started-at="2018-10-19T00:00:32Z" finished-at="2018-10-19T00:00:50Z">
+  <suite name="Suite" duration-ms="20092" started-at="2018-10-19T00:36:51Z" finished-at="2018-10-19T00:37:11Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18115" started-at="2018-10-19T00:00:32Z" finished-at="2018-10-19T00:00:50Z">
+    <test name="Test" duration-ms="20092" started-at="2018-10-19T00:36:51Z" finished-at="2018-10-19T00:37:11Z">
       <class name="com.grapeapp.qa.testcases.LoginPageTests">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="setUpSuite" is-config="true" duration-ms="397" started-at="2018-10-18T20:00:31Z" finished-at="2018-10-18T20:00:32Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="setUpSuite" is-config="true" duration-ms="437" started-at="2018-10-18T20:36:51Z" finished-at="2018-10-18T20:36:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="setUpMethod" is-config="true" duration-ms="14027" started-at="2018-10-18T20:00:32Z" finished-at="2018-10-18T20:00:46Z">
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="setUpMethod" is-config="true" duration-ms="16635" started-at="2018-10-18T20:36:51Z" finished-at="2018-10-18T20:37:08Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="FAIL" signature="testTitle()[pri:1, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="testTitle" duration-ms="31" started-at="2018-10-18T20:00:46Z" finished-at="2018-10-18T20:00:46Z">
+        <test-method status="FAIL" signature="testTitle()[pri:1, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="testTitle" duration-ms="29" started-at="2018-10-18T20:37:08Z" finished-at="2018-10-18T20:37:08Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [#1 Free CRM software in the cloud for sales and service.] but found [#1 Free CRM software in the cloud for sales and service]]]>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTitle -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="tearDownMethod" is-config="true" duration-ms="4032" started-at="2018-10-18T20:00:46Z" finished-at="2018-10-18T20:00:50Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="tearDownMethod" is-config="true" duration-ms="3390" started-at="2018-10-18T20:37:08Z" finished-at="2018-10-18T20:37:11Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="tearDownSuite" is-config="true" duration-ms="584" started-at="2018-10-18T20:00:50Z" finished-at="2018-10-18T20:00:51Z">
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.grapeapp.qa.testcases.LoginPageTests@5f341870]" name="tearDownSuite" is-config="true" duration-ms="712" started-at="2018-10-18T20:37:11Z" finished-at="2018-10-18T20:37:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
