@@ -31,8 +31,8 @@ import com.relevantcodes.extentreports.LogStatus;
 public class Testbase {
 	
 	String configFilePath = "C:\\Users\\simir\\eclipse-workspace\\GrapeApp\\src\\main\\java\\com\\grapeapp\\qa\\configuration\\config.properties";
-	String extentReportPath = "C:\\Users\\simir\\eclipse-workspace\\GrapeApp\\ExtentReports\\GrapeAppReport.html";
-	String extentConfigPath = "C:\\Users\\simir\\eclipse-workspace\\GrapeApp\\ExtentReports\\extent-config.xml";
+	String extentReportPath = "C:\\\\ExtentReports\\GrapeAppReport.html";
+	String extentConfigPath = "C:\\ExtentReports\\extent-config.xml";
 	public static WebDriver driver;
 	public static Properties prop;
 	public static ExtentReports extent;
