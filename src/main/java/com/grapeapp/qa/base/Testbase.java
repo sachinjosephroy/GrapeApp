@@ -147,6 +147,9 @@ public class Testbase {
 		if(!actual.equals(expected)) {
 			test.log(LogStatus.FAIL, "EXP RESULT: " + expected + "<br/>" + "ACT RESULT: " + actual);
 		}
+		else {
+			test.log(LogStatus.PASS, "EXP RESULT: " + expected + "<br/>" + "ACT RESULT: " + actual);
+		}
 	}
 	
 }
