@@ -22,6 +22,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.grapeapp.qa.logs.WebEventListener;
+import com.grapeapp.qa.pages.HomePage;
 import com.grapeapp.qa.pages.LoginPage;
 import com.grapeapp.qa.utils.TestUtil;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -42,6 +43,7 @@ public class Testbase {
 	WebEventListener eListener;
 	
 	public LoginPage login;
+	public HomePage home;
 	public static TestUtil util;
 	
 	public String getConfigFilePath() {
@@ -93,6 +95,7 @@ public class Testbase {
 	
 	public void initializePages() {
 		login = new LoginPage(driver);
+		home = new HomePage(driver);
 		util = new TestUtil();
 	}
 	

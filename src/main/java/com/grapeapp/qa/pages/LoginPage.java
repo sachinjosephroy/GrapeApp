@@ -16,13 +16,13 @@ public class LoginPage extends Testbase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "")
+	@FindBy(name="username")
 	WebElement tbUsername;
 	
-	@FindBy(xpath = "")
+	@FindBy(name="password")
 	WebElement tbPassword;
 	
-	@FindBy(xpath = "")
+	@FindBy(xpath="//input[@type='submit']")
 	WebElement btnLogin;
 	
 	@FindBy(xpath = "//div[@id='slide_1']//h1")
