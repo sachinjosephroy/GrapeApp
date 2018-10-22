@@ -88,7 +88,7 @@ public class Testbase {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 		
-		initializePages();
+		//initializePages();
 	}
 	
 	public void initializePages() {
