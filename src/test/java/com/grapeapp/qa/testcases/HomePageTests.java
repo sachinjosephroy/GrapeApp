@@ -15,6 +15,7 @@ public class HomePageTests extends Testbase {
 	public void testTitle() {
 		String actual = home.getTitle();
 		String expected = "CRMPRO";
+		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
 	}
 
