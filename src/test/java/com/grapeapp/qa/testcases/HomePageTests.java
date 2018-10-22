@@ -13,6 +13,7 @@ public class HomePageTests extends Testbase {
 	
 	@Test(priority=1)
 	public void testTitle() {
+		login.logMeIn();
 		String actual = home.getTitle();
 		String expected = "CRMPRO";
 		verifyTestResult(actual, expected);
