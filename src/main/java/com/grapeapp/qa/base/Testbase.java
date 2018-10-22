@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -78,6 +79,9 @@ public class Testbase {
 			else if (osName.equalsIgnoreCase("windows 10")) {
 				System.setProperty("webdriver.gecko.driver", prop.getProperty("firefoxdriverpath"));
 				driver = new FirefoxDriver();
+				
+				/*System.setProperty("webdriver.edge.driver", prop.getProperty("edgedriverpath"));
+				driver = new EdgeDriver();*/
 			}
 		
 		e_driver = new EventFiringWebDriver(driver);
@@ -129,7 +133,7 @@ public class Testbase {
 			test.log(LogStatus.PASS, "Testing passed");
 			extent.endTest(test);
 		}
-		driver.quit();
+		//driver.quit();
 		
 	}
 	

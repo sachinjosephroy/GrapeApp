@@ -1,5 +1,6 @@
 package com.grapeapp.qa.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,10 +30,11 @@ public class LoginPage extends Testbase {
 	WebElement txtLogo;
 	
 	
-	public void logMeIn() {
+	public void logMeIn() throws InterruptedException {
 		tbUsername.sendKeys(prop.getProperty("username"));
 		tbPassword.sendKeys(prop.getProperty("password"));
 		util.jsClick(btnLogin);
+		Thread.sleep(2000);
 	}
 
 

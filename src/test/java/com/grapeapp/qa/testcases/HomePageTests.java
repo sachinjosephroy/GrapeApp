@@ -12,7 +12,7 @@ public class HomePageTests extends Testbase {
 	}
 	
 	@Test(priority=1)
-	public void testTitle() {
+	public void testTitle() throws InterruptedException {
 		login.logMeIn();
 		String actual = home.getTitle();
 		String expected = "CRMPRO";
