@@ -79,11 +79,11 @@ public class Testbase {
 				driver = new ChromeDriver();
 			}
 			else if (osName.equalsIgnoreCase("windows 10")) {
-				System.setProperty("webdriver.gecko.driver", prop.getProperty("firefoxdriverpath"));
-				driver = new FirefoxDriver();
+				/*System.setProperty("webdriver.gecko.driver", prop.getProperty("firefoxdriverpath"));
+				driver = new FirefoxDriver();*/
 				
-				/*System.setProperty("webdriver.edge.driver", prop.getProperty("edgedriverpath"));
-				driver = new EdgeDriver();*/
+				System.setProperty("webdriver.edge.driver", prop.getProperty("edgedriverpath"));
+				driver = new EdgeDriver();
 			}
 		
 		e_driver = new EventFiringWebDriver(driver);
