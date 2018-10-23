@@ -46,27 +46,7 @@ public class CompanyPage extends Testbase {
 	WebElement txtPhone;
 	
 	public String getCompanyPhoneFromGrid(String company, String phone, String email) {
-		//util.hover(menuCompanies);
-		//util.switchFrame();
-		//JavascriptExecutor je = (JavascriptExecutor)driver;
-	    //je.executeScript("arguments[0].scrollIntoView(true)", menuCompanies);
-		/*Actions act = new Actions(driver);
-		act.moveToElement(menuCompanies).build().perform();
-		wait.untilElementIsVisible(menuItemNewCompany);*/
-		//menuItemNewCompany.click();
-		//driver.switchTo().defaultContent();
-		driver.switchTo().frame("mainpanel");
-		menuCompanies.click();
-		driver.switchTo().defaultContent();
-		new WebDriverWait(driver, 4, 100).until(ExpectedConditions.stalenessOf(btnNewCompany));
-		btnNewCompany.click();
-		tbCompany.sendKeys(company);
-		tbPhone.sendKeys(phone);
-		tbEmail.sendKeys(email);
-		saveBtn.click();
-		menuCompanies.click();
-		String text = txtPhone.getText();
-		return text;
+		return company;
 	}
 	
 
