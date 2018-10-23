@@ -45,8 +45,14 @@ public class CompanyPage extends Testbase {
 	@FindBy(xpath = "//span[@context='phone']")
 	WebElement txtPhone;
 	
-	public String getCompanyPhoneFromGrid(String company, String phone, String email) {
-		return company;
+	@FindBy(xpath = "//input[@name='cs_save_search']")
+	WebElement txtSaveSearch;
+	
+	public String getCompanyPhoneFromGrid(String comp, String phone, String email) {
+		driver.switchTo().frame("mainpanel");
+		menuCompanies.click();
+		String text = txtSaveSearch.getText();
+		return text;
 	}
 	
 
