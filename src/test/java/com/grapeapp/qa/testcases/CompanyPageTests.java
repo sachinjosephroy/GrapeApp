@@ -20,7 +20,7 @@ public class CompanyPageTests extends Testbase {
 	}
 	
 	@Test(priority=1, dataProvider="getTestData")
-	public void testCompanyPhoneFromGrid(String comp, String phone, String email) {
+	public void testCompanyPhoneFromGrid(String comp, String phone, String email) throws InterruptedException {
 		login.logMeIn();
 		String actual = company.getCompanyPhoneFromGrid(comp, phone, email);
 		String expected = "(212) 985-9999";

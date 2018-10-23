@@ -42,7 +42,7 @@ public class CompanyPage extends Testbase {
 	@FindBy(xpath = "//span[@context='phone']")
 	WebElement txtPhone;
 	
-	public String getCompanyPhoneFromGrid(String company, String phone, String email) {
+	public String getCompanyPhoneFromGrid(String company, String phone, String email) throws InterruptedException {
 		//util.hover(menuCompanies);
 		//util.switchFrame();
 		//JavascriptExecutor je = (JavascriptExecutor)driver;
@@ -54,6 +54,7 @@ public class CompanyPage extends Testbase {
 		//driver.switchTo().defaultContent();
 		driver.switchTo().frame("mainpanel");
 		menuCompanies.click();
+		Thread.sleep(2000);
 		btnNewCompany.click();
 		tbCompany.sendKeys(company);
 		tbPhone.sendKeys(phone);
