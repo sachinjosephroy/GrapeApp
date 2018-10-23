@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 22 20:02:19 EDT 2018</td>
+<td>Started on:</td><td>Mon Oct 22 21:57:29 EDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6656 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19364 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,9 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.grapeapp.qa.testcases.HomePageTests.testTitle()'><b>testTitle</b><br>Test class: com.grapeapp.qa.testcases.HomePageTests</td>
-<td><div><pre>java.lang.AssertionError: expected [CRMPROs] but found [CRMPRO]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.grapeapp.qa.testcases.HomePageTests.testTitle(HomePageTests.java:20)
+<td><div><pre>java.lang.NullPointerException
+	at com.grapeapp.qa.pages.LoginPage.logMeIn(LoginPage.java:44)
+	at com.grapeapp.qa.testcases.HomePageTests.testTitle(HomePageTests.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,15 +104,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace139947936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace139947936'><pre>java.lang.AssertionError: expected [CRMPROs] but found [CRMPRO]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.grapeapp.qa.testcases.HomePageTests.testTitle(HomePageTests.java:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1814827909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1814827909'><pre>java.lang.NullPointerException
+	at com.grapeapp.qa.pages.LoginPage.logMeIn(LoginPage.java:44)
+	at com.grapeapp.qa.testcases.HomePageTests.testTitle(HomePageTests.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,7 +134,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
+<td>0</td>
 <td>com.grapeapp.qa.testcases.HomePageTests@5f341870</td></tr>
 </table><p>
 </body>

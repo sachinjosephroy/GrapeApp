@@ -36,14 +36,12 @@ public class LoginPage extends Testbase {
 	WebElement txtHeader;
 	
 	
-	public void logMeIn() throws InterruptedException {
+	public void logMeIn() {
 		tbUsername.sendKeys(prop.getProperty("username"));
 		tbPassword.sendKeys(prop.getProperty("password"));
 		util.jsClick(btnLogin);
-		//Thread.sleep(1000);
-		driver.switchTo().frame("mainpanel");
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOf(txtHeader));
+		util.switchFrame();
+		wait.untilElementIsVisible(txtHeader);
 	}
 
 

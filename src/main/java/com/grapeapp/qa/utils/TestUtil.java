@@ -11,5 +11,9 @@ public class TestUtil extends Testbase {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", elem);
 	}
+	
+	public void switchFrame() {
+		driver.switchTo().frame("mainpanel");
+	}
 
 }

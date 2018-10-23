@@ -12,10 +12,10 @@ public class HomePageTests extends Testbase {
 	}
 	
 	@Test(priority=1)
-	public void testTitle() throws InterruptedException {
+	public void testTitle() {
 		login.logMeIn();
 		String actual = home.getTitle();
-		String expected = "CRMPROs";
+		String expected = "CRMPRO";
 		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
 	}

@@ -26,6 +26,7 @@ import com.grapeapp.qa.logs.WebEventListener;
 import com.grapeapp.qa.pages.HomePage;
 import com.grapeapp.qa.pages.LoginPage;
 import com.grapeapp.qa.utils.TestUtil;
+import com.grapeapp.qa.wait.Wait;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -46,6 +47,7 @@ public class Testbase {
 	public LoginPage login;
 	public HomePage home;
 	public static TestUtil util;
+	public static Wait wait;
 	
 	public String getConfigFilePath() {
 		String configFilePath = null;
@@ -102,6 +104,7 @@ public class Testbase {
 		login = new LoginPage(driver);
 		home = new HomePage(driver);
 		util = new TestUtil();
+		wait = new Wait();
 	}
 	
 	@BeforeSuite
