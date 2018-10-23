@@ -15,7 +15,7 @@ public class TestUtil extends Testbase {
 	
 	static Workbook book;
 	static Sheet sheet;
-	static String excelDataFilePath = "C:\\Users\\simir\\eclipse-workspace\\GrapeApp\\ExcelData\\ExcelData.xlsx";
+	static String excelDataFilePath = "C:\\ExtentReports\\ExcelData.xlsx";
 	
 	public void jsClick(WebElement elem) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
