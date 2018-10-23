@@ -58,7 +58,7 @@ public class CompanyPage extends Testbase {
 		driver.switchTo().frame("mainpanel");
 		menuCompanies.click();
 		driver.switchTo().defaultContent();
-		new WebDriverWait(driver, 10).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.name("mainpanel")));
+		new WebDriverWait(driver, 4, 100).until(ExpectedConditions.stalenessOf(btnNewCompany));
 		btnNewCompany.click();
 		tbCompany.sendKeys(company);
 		tbPhone.sendKeys(phone);
