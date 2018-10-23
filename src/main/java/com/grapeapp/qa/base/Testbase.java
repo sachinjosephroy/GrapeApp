@@ -79,7 +79,7 @@ public class Testbase {
 	
 	public void initializeBrowser() {
 		String osName = System.getProperty("os.name");
-			if (osName.equalsIgnoreCase("windows 10")) {
+			if (osName.equalsIgnoreCase("windows 7")) {
 				System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverpath"));
 				driver = new ChromeDriver();
 				Capabilities cap = ((ChromeDriver) driver).getCapabilities();
