@@ -44,7 +44,7 @@ public class CompanyPage extends Testbase {
 	
 	public String getCompanyPhoneFromGrid(String company, String phone, String email) {
 		//util.hover(menuCompanies);
-		util.switchFrame();
+		//util.switchFrame();
 		//JavascriptExecutor je = (JavascriptExecutor)driver;
 	    //je.executeScript("arguments[0].scrollIntoView(true)", menuCompanies);
 		/*Actions act = new Actions(driver);
