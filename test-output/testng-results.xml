@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21453" started-at="2018-10-23T21:45:21Z" finished-at="2018-10-23T21:45:43Z">
+  <suite name="Default suite" duration-ms="16479" started-at="2018-10-23T21:58:09Z" finished-at="2018-10-23T21:58:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21453" started-at="2018-10-23T21:45:21Z" finished-at="2018-10-23T21:45:43Z">
+    <test name="Default test" duration-ms="16479" started-at="2018-10-23T21:58:09Z" finished-at="2018-10-23T21:58:25Z">
       <class name="com.grapeapp.qa.testcases.CompanyPageTests">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="setUpSuite" is-config="true" duration-ms="250" started-at="2018-10-23T17:45:21Z" finished-at="2018-10-23T17:45:21Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="setUpSuite" is-config="true" duration-ms="273" started-at="2018-10-23T17:58:09Z" finished-at="2018-10-23T17:58:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="setUpMethod" is-config="true" duration-ms="9321" started-at="2018-10-23T17:45:22Z" finished-at="2018-10-23T17:45:32Z">
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="setUpMethod" is-config="true" duration-ms="7368" started-at="2018-10-23T17:58:10Z" finished-at="2018-10-23T17:58:17Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="testCompanyPhoneFromGrid(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="testCompanyPhoneFromGrid" duration-ms="10367" started-at="2018-10-23T17:45:32Z" data-provider="getTestData" finished-at="2018-10-23T17:45:42Z">
+        <test-method status="PASS" signature="testCompanyPhoneFromGrid(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="testCompanyPhoneFromGrid" duration-ms="7388" started-at="2018-10-23T17:58:17Z" data-provider="getTestData" finished-at="2018-10-23T17:58:25Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompanyPhoneFromGrid -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="tearDownMethod" is-config="true" duration-ms="986" started-at="2018-10-23T17:45:42Z" finished-at="2018-10-23T17:45:43Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="tearDownMethod" is-config="true" duration-ms="957" started-at="2018-10-23T17:58:25Z" finished-at="2018-10-23T17:58:25Z">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="tearDownSuite" is-config="true" duration-ms="600" started-at="2018-10-23T17:45:43Z" finished-at="2018-10-23T17:45:44Z">
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="tearDownSuite" is-config="true" duration-ms="499" started-at="2018-10-23T17:58:26Z" finished-at="2018-10-23T17:58:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
