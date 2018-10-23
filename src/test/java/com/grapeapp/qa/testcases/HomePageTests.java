@@ -15,7 +15,7 @@ public class HomePageTests extends Testbase {
 	public void testTitle() throws InterruptedException {
 		login.logMeIn();
 		String actual = home.getTitle();
-		String expected = "CRMPRO";
+		String expected = "CRMPROs";
 		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
 	}
