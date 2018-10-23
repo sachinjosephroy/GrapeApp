@@ -18,5 +18,5 @@ public class HomePage extends Testbase {
 		String title = driver.getTitle();
 		return title;
 	}
-	
+
 }

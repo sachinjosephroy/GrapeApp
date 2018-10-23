@@ -5,6 +5,7 @@
     <classes>
       <class name="com.grapeapp.qa.testcases.LoginPageTests"/>
       <class name="com.grapeapp.qa.testcases.HomePageTests"/>
+      <class name="com.grapeapp.qa.testcases.CompanyPageTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

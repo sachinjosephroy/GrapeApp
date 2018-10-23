@@ -2,46 +2,63 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18717" started-at="2018-10-23T13:16:45Z" finished-at="2018-10-23T13:17:03Z">
+  <suite name="Default suite" duration-ms="21727" started-at="2018-10-23T20:14:52Z" finished-at="2018-10-23T20:15:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18717" started-at="2018-10-23T13:16:45Z" finished-at="2018-10-23T13:17:03Z">
-      <class name="com.grapeapp.qa.testcases.HomePageTests">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.grapeapp.qa.testcases.HomePageTests@5f341870]" name="setUpSuite" is-config="true" duration-ms="378" started-at="2018-10-23T09:16:44Z" finished-at="2018-10-23T09:16:45Z">
+    <test name="Default test" duration-ms="21727" started-at="2018-10-23T20:14:52Z" finished-at="2018-10-23T20:15:14Z">
+      <class name="com.grapeapp.qa.testcases.CompanyPageTests">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="setUpSuite" is-config="true" duration-ms="258" started-at="2018-10-23T16:14:52Z" finished-at="2018-10-23T16:14:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.grapeapp.qa.testcases.HomePageTests@5f341870]" name="setUpMethod" is-config="true" duration-ms="13878" started-at="2018-10-23T09:16:45Z" finished-at="2018-10-23T09:16:59Z">
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="setUpMethod" is-config="true" duration-ms="13369" started-at="2018-10-23T16:14:53Z" finished-at="2018-10-23T16:15:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.grapeapp.qa.testcases.HomePageTests.testTitle()]]>
+                <![CDATA[public void com.grapeapp.qa.testcases.CompanyPageTests.testCompanyPhoneFromGrid(java.lang.String,java.lang.String,java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="testTitle()[pri:1, instance:com.grapeapp.qa.testcases.HomePageTests@5f341870]" name="testTitle" duration-ms="1845" started-at="2018-10-23T09:16:59Z" finished-at="2018-10-23T09:17:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.grapeapp.qa.testcases.HomePageTests@5f341870]" name="tearDownMethod" is-config="true" duration-ms="2974" started-at="2018-10-23T09:17:00Z" finished-at="2018-10-23T09:17:03Z">
+        <test-method status="PASS" signature="testCompanyPhoneFromGrid(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="testCompanyPhoneFromGrid" duration-ms="7581" started-at="2018-10-23T16:15:06Z" data-provider="getTestData" finished-at="2018-10-23T16:15:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testTitle status=SUCCESS method=HomePageTests.testTitle()[pri:1, instance:com.grapeapp.qa.testcases.HomePageTests@5f341870] output={null}]]]>
+                <![CDATA[AGMT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[(212) 985-9999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[agmt@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompanyPhoneFromGrid -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="tearDownMethod" is-config="true" duration-ms="6" started-at="2018-10-23T16:15:14Z" finished-at="2018-10-23T16:15:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCompanyPhoneFromGrid status=SUCCESS method=CompanyPageTests.testCompanyPhoneFromGrid(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.grapeapp.qa.testcases.HomePageTests@5f341870]" name="tearDownSuite" is-config="true" duration-ms="537" started-at="2018-10-23T09:17:03Z" finished-at="2018-10-23T09:17:04Z">
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.grapeapp.qa.testcases.CompanyPageTests@66a3ffec]" name="tearDownSuite" is-config="true" duration-ms="573" started-at="2018-10-23T16:15:14Z" finished-at="2018-10-23T16:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-      </class> <!-- com.grapeapp.qa.testcases.HomePageTests -->
+      </class> <!-- com.grapeapp.qa.testcases.CompanyPageTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

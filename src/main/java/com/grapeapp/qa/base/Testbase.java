@@ -25,6 +25,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.grapeapp.qa.logs.WebEventListener;
+import com.grapeapp.qa.pages.CompanyPage;
 import com.grapeapp.qa.pages.HomePage;
 import com.grapeapp.qa.pages.LoginPage;
 import com.grapeapp.qa.utils.TestUtil;
@@ -50,6 +51,7 @@ public class Testbase {
 	
 	public LoginPage login;
 	public HomePage home;
+	public CompanyPage company;
 	public static TestUtil util;
 	public static Wait wait;
 	
@@ -116,6 +118,7 @@ public class Testbase {
 	public void initializePages() {
 		login = new LoginPage(driver);
 		home = new HomePage(driver);
+		company = new CompanyPage(driver);
 		util = new TestUtil();
 		wait = new Wait();
 	}
@@ -149,7 +152,7 @@ public class Testbase {
 			test.log(LogStatus.PASS, "Testing passed");
 			extent.endTest(test);
 		}
-		driver.quit();
+		//driver.quit();
 		
 	}
 	

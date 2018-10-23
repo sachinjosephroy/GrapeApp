@@ -1,6 +1,7 @@
 package com.grapeapp.qa.logs;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
@@ -108,6 +109,36 @@ public class WebEventListener extends Testbase implements WebDriverEventListener
 	}
 
 	public void onException(Throwable throwable, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public <X> void afterGetScreenshotAs(OutputType<X> arg0, X arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void afterSwitchToWindow(String arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public <X> void beforeGetScreenshotAs(OutputType<X> arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void beforeGetText(WebElement arg0, WebDriver arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void beforeSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
 		
 	}

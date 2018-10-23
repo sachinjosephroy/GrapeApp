@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.grapeapp.qa.testcases.HomePageTests">
+      <class name="com.grapeapp.qa.testcases.CompanyPageTests">
         <methods>
           <include name="setUpMethod"/>
           <include name="tearDownMethod"/>
-          <include name="testTitle"/>
           <include name="tearDownSuite"/>
           <include name="setUpSuite"/>
+          <include name="testCompanyPhoneFromGrid"/>
         </methods>
-      </class> <!-- com.grapeapp.qa.testcases.HomePageTests -->
+      </class> <!-- com.grapeapp.qa.testcases.CompanyPageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
