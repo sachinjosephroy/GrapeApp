@@ -51,7 +51,7 @@ public class CompanyPage extends Testbase {
 		act.moveToElement(menuCompanies).build().perform();
 		wait.untilElementIsVisible(menuItemNewCompany);*/
 		//menuItemNewCompany.click();
-		driver.switchTo().defaultContent();
+		//driver.switchTo().defaultContent();
 		util.switchFrame();
 		menuCompanies.click();
 		btnNewCompany.click();
