@@ -8,10 +8,12 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
@@ -41,6 +43,8 @@ public class Testbase {
 	public static Properties prop;
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	String browsername;
+	String browserversion;
 	EventFiringWebDriver e_driver;
 	WebEventListener eListener;
 	
@@ -72,18 +76,27 @@ public class Testbase {
 	}
 	
 	public void initializeBrowser() {
-		//String browserName = prop.getProperty("browser");
 		String osName = System.getProperty("os.name");
 			if (osName.equalsIgnoreCase("windows 7")) {
 				System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriverpath"));
 				driver = new ChromeDriver();
+				Capabilities cap = ((ChromeDriver) driver).getCapabilities();
+				browsername = cap.getBrowserName().toUpperCase();
+				browserversion = cap.getVersion();
+				test.setDescription("Operating System: " + osName.toUpperCase() + ", " + "<br />" + "Browser: " + browsername + " " + browserversion);
 			}
 			else if (osName.equalsIgnoreCase("windows 10")) {
-				/*System.setProperty("webdriver.gecko.driver", prop.getProperty("firefoxdriverpath"));
-				driver = new FirefoxDriver();*/
+				System.setProperty("webdriver.gecko.driver", prop.getProperty("firefoxdriverpath"));
+				driver = new FirefoxDriver();
+				Capabilities cap = ((FirefoxDriver) driver).getCapabilities();
+				browsername = cap.getBrowserName().toUpperCase();
 				
-				System.setProperty("webdriver.edge.driver", prop.getProperty("edgedriverpath"));
+				/*System.setProperty("webdriver.edge.driver", prop.getProperty("edgedriverpath"));
 				driver = new EdgeDriver();
+				Capabilities cap = ((EdgeDriver) driver).getCapabilities();
+				browsername = cap.getBrowserName().toUpperCase();*/
+				
+				test.setDescription("Operating System: " + osName.toUpperCase() + ", " + "<br />" + "Browser: " + browsername);
 			}
 		
 		e_driver = new EventFiringWebDriver(driver);
@@ -115,8 +128,7 @@ public class Testbase {
 	
 	@BeforeMethod
 	public void setUpMethod(Method method) {
-		String osName = System.getProperty("os.name");
-		test = extent.startTest(osName + " :: " + this.getClass().getSimpleName() + " :: " + method.getName(), method.getName());
+		test = extent.startTest(this.getClass().getSimpleName() + " :: " + method.getName());
 		test.assignAuthor("Sachin Roy");
 		test.assignCategory("Functional Tests");
 		initializeBrowser();
