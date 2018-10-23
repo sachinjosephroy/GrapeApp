@@ -52,7 +52,7 @@ public class CompanyPage extends Testbase {
 		wait.untilElementIsVisible(menuItemNewCompany);*/
 		//menuItemNewCompany.click();
 		//driver.switchTo().defaultContent();
-		util.switchFrame();
+		driver.switchTo().frame("mainpanel");
 		menuCompanies.click();
 		btnNewCompany.click();
 		tbCompany.sendKeys(company);
