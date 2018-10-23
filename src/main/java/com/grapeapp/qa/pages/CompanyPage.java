@@ -43,14 +43,14 @@ public class CompanyPage extends Testbase {
 	WebElement txtPhone;
 	
 	public String getCompanyPhoneFromGrid(String company, String phone, String email) {
-		//util.hover(menuCompanies);
+		util.hover(menuCompanies);
 		//util.switchFrame();
 		//JavascriptExecutor je = (JavascriptExecutor)driver;
 	    //je.executeScript("arguments[0].scrollIntoView(true)", menuCompanies);
 		/*Actions act = new Actions(driver);
 		act.moveToElement(menuCompanies).build().perform();
-		wait.untilElementIsVisible(menuItemNewCompany);
-		menuItemNewCompany.click();*/
+		wait.untilElementIsVisible(menuItemNewCompany);*/
+		menuItemNewCompany.click();
 		menuCompanies.click();
 		btnNewCompany.click();
 		tbCompany.sendKeys(company);
