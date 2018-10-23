@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.grapeapp.qa.testcases.LoginPageTests"/>
-      <class name="com.grapeapp.qa.testcases.HomePageTests"/>
+      
       <class name="com.grapeapp.qa.testcases.CompanyPageTests"/>
     </classes>
   </test> <!-- Test -->
