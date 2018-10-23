@@ -152,7 +152,7 @@ public class Testbase {
 			test.log(LogStatus.PASS, "Testing passed");
 			extent.endTest(test);
 		}
-		//driver.quit();
+		driver.quit();
 		
 	}
 	
