@@ -36,8 +36,8 @@ public class LoginPage extends Testbase {
 		tbUsername.sendKeys(prop.getProperty("username"));
 		tbPassword.sendKeys(prop.getProperty("password"));
 		util.jsClick(btnLogin);
-		/*util.switchFrame();
-		wait.untilElementIsVisible(txtHeader);*/
+		util.switchFrame();
+		wait.untilElementIsVisible(txtHeader);
 	}
 
 

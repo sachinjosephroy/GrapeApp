@@ -9,7 +9,7 @@
           <include name="tearDownMethod"/>
           <include name="tearDownSuite"/>
           <include name="setUpSuite"/>
-          <include name="testCompanyPhoneFromGrid"/>
+          <include name="testCompanyPhoneFromGrid" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.grapeapp.qa.testcases.CompanyPageTests -->
     </classes>
