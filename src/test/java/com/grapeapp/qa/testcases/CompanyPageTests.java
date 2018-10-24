@@ -23,7 +23,7 @@ public class CompanyPageTests extends Testbase {
 	public void testCompanyPhoneFromGrid(String comp, String phone, String email) {
 		login.logMeIn();
 		String actual = company.getCompanyPhoneFromGrid(comp, phone, email);
-		String expected = "(212) 985-9999";
+		String expected = phone;
 		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
 		company.deleteCompany();
