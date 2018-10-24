@@ -49,9 +49,15 @@ public class CompanyPage extends Testbase {
 	WebElement txtSaveSearch;
 	
 	public String getCompanyPhoneFromGrid(String comp, String phone, String email) {
-		driver.switchTo().frame("mainpanel");
+		util.switchFrame();
+		util.hover(menuCompanies);
+		menuItemNewCompany.click();
+		tbCompany.sendKeys(comp);
+		tbPhone.sendKeys(phone);
+		tbEmail.sendKeys(email);
+		saveBtn.click();
 		menuCompanies.click();
-		String text = txtSaveSearch.getText();
+		String text = txtPhone.getText();
 		return text;
 	}
 	
