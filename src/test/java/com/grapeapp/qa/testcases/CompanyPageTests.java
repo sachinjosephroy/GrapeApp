@@ -26,6 +26,7 @@ public class CompanyPageTests extends Testbase {
 		String expected = "(212) 985-9999";
 		verifyTestResult(actual, expected);
 		Assert.assertEquals(actual, expected);
+		company.deleteCompany();
 	}
 
 }

@@ -45,15 +45,13 @@ public class CompanyPage extends Testbase {
 	@FindBy(xpath = "//span[@context='phone']")
 	WebElement txtPhone;
 	
-	@FindBy(xpath = "//input[@name='cs_save_search']")
-	WebElement txtSaveSearch;
+	@FindBy(xpath = "//i[@title='Delete']")
+	WebElement icnDelete;
 	
 	public String getCompanyPhoneFromGrid(String comp, String phone, String email) {
-		//util.switchFrame();
 		util.hover(menuCompanies);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", menuItemNewCompany);
-		//menuItemNewCompany.click();
 		tbCompany.sendKeys(comp);
 		tbPhone.sendKeys(phone);
 		tbEmail.sendKeys(email);
@@ -63,5 +61,9 @@ public class CompanyPage extends Testbase {
 		return text;
 	}
 	
+	public void deleteCompany() {
+		icnDelete.click();
+		driver.switchTo().alert().accept();
+	}
 
 }
